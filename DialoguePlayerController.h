@@ -9,7 +9,7 @@
 class URestartWidget;
 
 /**
- * 
+ *
  */
 UCLASS()
 class DANGANRONPA_API ADialoguePlayerController : public APlayerController
@@ -17,13 +17,13 @@ class DANGANRONPA_API ADialoguePlayerController : public APlayerController
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(EditDefaultsOnly)
-	TSubclassOf<URestartWidget>RestartWidgetClass; 
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<URestartWidget>RestartWidgetClass;
 
 	void ShowRestartWidget();
 	void HideRestartWidget();
 private:
 	UPROPERTY()
 	TObjectPtr <URestartWidget>RestartWidget;
-		
+
 };

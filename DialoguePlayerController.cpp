@@ -1,6 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "DialoguePlayerController.h"
 #include"HUD/RestartWidget.h"
 
@@ -10,7 +7,7 @@ void ADialoguePlayerController::ShowRestartWidget()
 	if (RestartWidgetClass != nullptr)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Daaa"));
-		SetPause(true);
+		//SetPause(true);
 		SetInputMode(FInputModeUIOnly());
 
 		bShowMouseCursor = true;
@@ -18,7 +15,7 @@ void ADialoguePlayerController::ShowRestartWidget()
 		RestartWidget->AddToViewport();
 
 	}
-	
+
 }
 void ADialoguePlayerController::HideRestartWidget()
 {
@@ -28,3 +25,4 @@ void ADialoguePlayerController::HideRestartWidget()
 	SetInputMode(FInputModeGameOnly());
 	bShowMouseCursor = false;
 }
+
